@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles/details.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>   
+        <script type="text/javascript" src="libs/vue-material.js"></script>
+    </head>
+
+    <body>
+        <div class="title"></div>
+            <a href="index.html"><body link="#C0C0C0" vlink="#808080" alink="#FF0000"></body>BACK</a>
+            <div id="details">
+                
+                <div class="container">
+                    <div class="custom"></div>
+                    <div class="label">{{spell.name}}</div>
+                </div>
+                <div class="container">
+                    <div class="custom"></div>
+                    <div class="label">Dificulty: {{spell.dificulty}}</div>
+                </div>
+                <div class="container">
+                    <div class="custom"></div>
+                    <div class="label">Items needed:</div>
+                    <div class="items">{{spell.items}}</div>
+                </div>
+                <div class="container">
+                    <div class="custom"></div>
+                    <div class="label">Description:</div>
+                    <div class="value">{{spell.description}}</div>
+                </div>
+            
+                <script src="src/details.js"></script>
+            </div>
+        </div>
+     </body>
+
+</html>

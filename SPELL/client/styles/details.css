@@ -1,0 +1,30 @@
+
+
+.label {
+    padding:10px;
+    background-color:#fcfcfc;
+    
+color: rgb(0, 0, 0);
+}
+
+.value {
+       
+    padding: 20px;
+    color: cornsilk;
+    background-color: rgb(54, 51, 51);
+    flex:1;
+}
+.custom{
+
+    padding-top: 1px;
+}
+html {
+    background-color: rgb(19, 18, 18);
+}
+.items {
+       
+    padding: 10px;
+    color: cornsilk;
+    background-color: rgb(54, 51, 51);
+    flex:1;
+}
