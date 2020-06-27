@@ -24,7 +24,7 @@ api.put('/spells', function (request, response) {
 });
 
 api.post('/spells/:id', function (request, response) {
-  // in request o sa-mi vina un obiect de tip car care o sa aiba un anumit id
+  // in request o sa-mi vina un obiect de tip car care o sa aiba un anumit idf
   
   console.log(request.body,request.params.id);//un obiect de tipul car actualizat pe client
   console.log(updatespellById(request.body,request.params.id))
@@ -75,9 +75,9 @@ function getspells() {
 
 function savespell(spell) {
   let spells = getspells();// citire json din fisier
-  let maxId = getMaxId(spells);  // get maximum id form cars array
+  let maxId = getMaxId(spells);  // get maximum id 
   spell.id = maxId+1;// generare id unic
-  spells.push(spell);// adaugare masina noua in array
+  spells.push(spell);// adaugare in array
   try {
     fs.writeFileSync(spellsFilepath, JSON.stringify(spells,null,4));// salvare json array in fisier
   } catch (err) {
@@ -106,7 +106,7 @@ function getspellById(id){
 }
 
 function updatespellById(data,id){
-  let spells = getspell();// citire json din fisier
+  let spells = getspells();// citire json din fisier
   console.log(data,id)
   for(var i=0; i<spells.length; i++) {
     if(id == spells[i].id)

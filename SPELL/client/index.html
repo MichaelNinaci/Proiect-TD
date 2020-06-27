@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta content="utf-8" http-equiv="encoding" />
-  <title>SPELL</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/details.css" />
-  <script type="text/javascript" src="libs/vue.js"></script>
-  <script type="text/javascript" src="libs/vue-material.js"></script>
-  <script type="text/javascript" src="libs/axios.js"></script>
-  <script type="text/javascript" src="src/users-service.js"></script>
-</head>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <title>SPELL</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/details.css" />
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/users-service.js"></script>
+   
+  </head>
 
-<body>
-  <div id="app">
+  <body>
+    <div id="app">
 
-    <div class="title"></div>
+      <div class="title"></div>
 
-    <p style="text-align: center" v-if="spells.length == 0">You deleted all the spells</p>
+      <p style="text-align: center" v-if="spells.length == 0">You deleted all the spells</p>
 
-    <ul class="user-list" v-if="spells.length > 0">
-      <li>
-        <div class="user-row-header">
-          <div class="user-name">spell</div>
-
-          <div class="user-city ">type</div>
-
-          
-          
-          
-        </div>
-        
-      </li>
-
-      <li v-for="(spell,index) in spells">
-        <div class="sizes"  >
-          <div  class="label" style="display: inline-block;" >
-           <a :href="'details.html?id='+spell.id"><body link="#FF0000" vlink="#808080" alink="#FF0000"></body>{{ spell.name }}</a>
+      <ul class="user-list" v-if="spells.length > 0">
+        <li>
+          <div class="user-row-header">
+            <div class="user-name">spell</div>
+            <div class="user-city">type</div>
           </div>
-          <div  class="value_left">
-            &nbsp;
-            <span class=""><i>{{ spell.type }}</i></span>
-            &nbsp;&nbsp;
-            <button class="delete-btn" v-on:click="deletespell(index)">Delete</button>
-            &nbsp;&nbsp;
-        </div>
-      </li>
-    </ul>
-    <button class="delete-btn  value_left" style="height: 25px; background-color: rgb(199, 5, 5);" v-on:click="addspell()">ADD SPELL</button>
-  </div>
-  <script src="src/app.js"></script>
-</body>
+          
+        </li>
+
+        <li v-for="(spell,index) in spells">
+          <div class="sizes">
+            <div  class="user-name" style="display: inline-block;" >
+              <a :href="'details.html?id='+spell.id"><body link="#40E0D0" vlink="#e4e3e3" alink="#40E0D0"></body>{{ spell.name }}</a>
+            </div>
+              <div  class="value_left">
+                &nbsp;
+                <span class=""><i>{{ spell.type }}</i></span>
+                &nbsp;&nbsp;
+                <button class="delete-btn" v-on:click="deletespell(index)">Delete</button>
+                &nbsp;&nbsp;
+              </div>
+          </div>
+        </li>
+      </ul>
+      <button class="delete-btn" style="height: 25px; background-color: rgb(199, 5, 5);" v-on:click="addspell()">ADD SPELL</button>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 
 </html>

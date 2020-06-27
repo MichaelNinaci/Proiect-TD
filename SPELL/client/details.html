@@ -7,10 +7,10 @@
         <script type="text/javascript" src="libs/axios.js"></script>   
         <script type="text/javascript" src="libs/vue-material.js"></script>
     </head>
-
+    <div id="app">
     <body>
         <div class="title"></div>
-            <a href="index.html"><body link="#C0C0C0" vlink="#808080" alink="#FF0000"></body>BACK</a>
+            <a href="index.html"><body link="#FF0000" vlink="#FF0000" alink="#FF0000"></body>BACK</a>
             <div id="details">
                 
                 <div class="container">
@@ -19,7 +19,11 @@
                 </div>
                 <div class="container">
                     <div class="custom"></div>
-                    <div class="label">Dificulty: {{spell.dificulty}}</div>
+                    <div class="labelred">{{spell.shortdescription}}</div>
+                </div>
+                <div class="container">
+                    <div class="custom"></div>
+                    <div class="label">Difficulty: {{spell.difficulty}}</div>
                 </div>
                 <div class="container">
                     <div class="custom"></div>
@@ -36,5 +40,6 @@
             </div>
         </div>
      </body>
+    </div>
 
 </html>

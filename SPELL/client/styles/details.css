@@ -6,6 +6,12 @@
     
 color: rgb(0, 0, 0);
 }
+.labelred {
+    padding:10px;
+    background-color:#bb1313;
+
+color: rgb(15, 223, 223);
+}
 
 .value {
        
@@ -19,7 +25,7 @@ color: rgb(0, 0, 0);
     padding-top: 1px;
 }
 html {
-    background-color: rgb(19, 18, 18);
+    background-image: url(https://i.ibb.co/BGw2PqZ/backgroun.jpg);
 }
 .items {
        

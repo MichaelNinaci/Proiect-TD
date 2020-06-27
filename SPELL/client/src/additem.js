@@ -4,7 +4,6 @@ function run() {
       data: {
         id: 'default',
         spell: {},
-        pizza_pic: '',
       },
       created: function () {
 
@@ -15,25 +14,8 @@ function run() {
 
       },
       methods: {
-          add:function(){
-            if(this.spell.img !=undefined){
-                console.log(this.spell)
-            axios.put('http://localhost:3000/spells', this.spell).then(response => { console.log(response) })
-            }  
-        },
-
-          onFileSelected(event) {
-            const reader = new FileReader();
-            this.selectedFile = event.target.files[0]
-            reader.onloadend = () => {
-
-            var strImage = reader.result.replace(/^data:image\/[a-z]+;base64,/, "");
-            this.spell.img = strImage
-            
-            }
-            reader.readAsDataURL(this.selectedFile);
-        },
-
+          
+          
       }
     });
   }
