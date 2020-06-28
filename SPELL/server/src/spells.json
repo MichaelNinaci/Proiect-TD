@@ -55,7 +55,15 @@
         "description": "Picture the object exactly where it is, exactly what it looks like. Now create a fake memory of putting that object somewhere near you. When you open your eyes there it should be.",
         "difficulty":"advanced"
 
+    },
+    {
+        "id": 7,
+        "name": "Attract money",
+        "shortdescription": "This spell will help attract money towards your household.",
+        "type": "wealth",
+        "items": "Paper,green pen, 3 shiny coins, cinnamon, basil, paprika, candle of chosen colour, mortar and pestle or bowl and wooden spoon, string",
+        "description": "First write the initials of who this spell is for on the paper. Then turn the paper clockwise and write ' money is near, money is here' three times on top of the name(s). Underneath the names and the command write a money symbol such as £,$,€. Next, add the herbs into your mortar and pestle and blend in a clockwise motion while focusing on your intent. Rub the herb mixture onto the different coins and place them in the middle of the paper (any extra herb mix can be rubbed on the paper). Fold the paper towards you until you have a small pouch and use the sting to tie it up. Keep the pouch near a candle and light it (the candle) as much as possible.",
+        "difficulty": "intermediate"
     }
-    
     
 ]

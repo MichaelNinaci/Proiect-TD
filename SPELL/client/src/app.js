@@ -3,8 +3,7 @@ function run() {
     el: '#app',
     data: {
       spells: [],
-      usersService: null,
-      message: ''
+      usersService: null
     },
     created: function () {
       this.usersService = users();
@@ -16,12 +15,16 @@ function run() {
         this.usersService.remove(id).then(response => {console.log(response.data)
           this.usersService.get().then(response => (this.spells = response.data));
         });
-       // 
+       
       },
       addspell:function(){
         window.open("additem.html","_self")
+      },
+      save: function(id, name,shortdescription, type, items, description, difficulty){
+        this.spellsService.put(id, name,shortdescription, type, items, description, difficulty).then(response => {
+          this.spellsService.get().then(response => (this.spells= response.data));
+        });
       }
-
     }
   });
 

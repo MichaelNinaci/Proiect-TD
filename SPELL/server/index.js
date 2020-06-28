@@ -24,14 +24,11 @@ api.put('/spells', function (request, response) {
 });
 
 api.post('/spells/:id', function (request, response) {
-  // in request o sa-mi vina un obiect de tip car care o sa aiba un anumit idf
   
-  console.log(request.body,request.params.id);//un obiect de tipul car actualizat pe client
+  
+  console.log(request.body,request.params.id);
   console.log(updatespellById(request.body,request.params.id))
-  // citim cars din fisier pe baza id-ului primit de la client
-  // cautam daca exista indexul de pe request.body
-  // daca exista actualizam parametrii acestui produs/item
-  // salvam in fisier produsele actualizate
+  
   response.json('Spell was saved succesfully');
 });
 
@@ -52,10 +49,7 @@ api.delete('/spells/:index', function (request, response) {
 	             )
   
   
-//const jsonString = JSON.stringify(cars,null,4)
-  
 
-  //response.json('Car with index ' + request.params.index + ' was deleted');
 });
 
 api.listen(3000, function () {

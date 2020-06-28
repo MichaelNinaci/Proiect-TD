@@ -24,7 +24,6 @@
       <ul class="user-list" v-if="spells.length > 0">
         <li>
           <div class="user-row-header">
-            <div class="user-name">spell</div>
             <div class="user-city">type</div>
           </div>
           
@@ -33,19 +32,19 @@
         <li v-for="(spell,index) in spells">
           <div class="sizes">
             <div  class="user-name" style="display: inline-block;" >
-              <a :href="'details.html?id='+spell.id"><body link="#40E0D0" vlink="#e4e3e3" alink="#40E0D0"></body>{{ spell.name }}</a>
+              <a :href="'details.html?id='+spell.id" class="user-name">{{ spell.name }}</a>
             </div>
-              <div  class="value_left">
+              <div  class="sizes value_left">
                 &nbsp;
                 <span class=""><i>{{ spell.type }}</i></span>
                 &nbsp;&nbsp;
-                <button class="delete-btn" v-on:click="deletespell(index)">Delete</button>
+                <button class="delete-btn" style="height :25px" v-on:click="deletespell(index)">x</button>
                 &nbsp;&nbsp;
               </div>
           </div>
         </li>
       </ul>
-      <button class="delete-btn" style="height: 25px; background-color: rgb(199, 5, 5);" v-on:click="addspell()">ADD SPELL</button>
+      <button class="add-btn"  v-on:click="addspell()">+</button>
     </div>
     <script src="src/app.js"></script>
   </body>

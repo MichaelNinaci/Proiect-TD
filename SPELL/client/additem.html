@@ -1,58 +1,58 @@
 <html>
 
-<head>
-    <link rel="stylesheet" href="styles/details.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <script type="text/javascript" src="libs/vue.js"></script>
-    <script type="text/javascript" src="libs/axios.js"></script>
-</head>
-<div id="app">
-        
-<body>
-    <div class="title"></div>
-    <a href="index.html"><body link="#FF0000" vlink="#FF0000" alink="#FF0000"></body>BACK</a>
-    <div id="additem">
+    <head>
+        <link rel="stylesheet" href="styles/details.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script type="text/javascript" src="libs/vue.js"></script>
+        <script type="text/javascript" src="libs/axios.js"></script>
+        <script src="src/additem.js"></script>
+    </head>
+    <div id="app">
+            
+        <body>
+            <div class="title"></div>
+                <a href="index.html"><body link="#FF0000" vlink="#FF0000" alink="#FF0000"></body>BACK</a>
+                <div id="additem">
 
-        <h1 style="text-align: center;">Adaugare produs nou</h1>
-
-       
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">Spell name</div>
-            <div class="value"><input type="text"  v-model="spell.name"></div>
-        </div>
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">What it does:</div>
-            <div class="value"><input type="text" v-model="spell.shortdescription"></div>
-        </div>
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">Spell type</div>
-            <div class="value"><input type="text" v-model="spell.type"></div>
-        </div>
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">Dificulty</div>
-            <div class="value"><input type="text" v-model="spell.dificulty"></div>
-        </div>
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">Items needed</div>
-            <div class="value"><input type="text" v-model="spell.items"></div>
-        </div>
-        <div class="container">
-            <div class="custom"></div>
-            <div class="label">Describe the ritual</div>
-            <div class="value"><input type="text" v-model="spell.description"></div>
-        </div>
-        
-       
-        <button class="button"  v-on:click="add()">Upload</button>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">Spell name</div>
+                        <div class="value"><input type="text"  v-model="spell.name"></div>
+                    </div>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">What it does:</div>
+                        <div class="value"><input type="text" v-model="spell.shortdescription"></div>
+                    </div>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">Spell type</div>
+                        <div class="value"><input type="text" v-model="spell.type"></div>
+                    </div>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">Difficulty</div>
+                        <div class="value"><input type="text" v-model="spell.difficulty"></div>
+                    </div>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">Items needed</div>
+                        <div class="value"><input type="text" size="20%" v-model="spell.items"></div>
+                    </div>
+                    <div class="container">
+                        <div class="custom"></div>
+                        <div class="label">Describe the ritual</div>
+                        <div class="value"><textarea rows="20" cols="60%" v-model="spell.description"></textarea></div>
+                    </div>
+                    <button class="button"  v-on:click="save(name)">Save</button>
+                
+                    
+                </div>
+                
+            </div>
+            
+            
+        </body>
     </div>
-    </div>
-    <script src="src/additem.js"></script>
-</body>
-</div>
 
 </html>

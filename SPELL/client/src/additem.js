@@ -3,6 +3,12 @@ function run() {
       el: '#additem',
       data: {
         id: 'default',
+        name:'',
+        type: '',
+        shortdescription:'',
+        items:'',
+        description:'',
+        difficulty:'',
         spell: {},
       },
       created: function () {
@@ -14,6 +20,7 @@ function run() {
 
       },
       methods: {
+        
           
           
       }

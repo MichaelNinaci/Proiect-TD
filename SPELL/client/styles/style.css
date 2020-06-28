@@ -4,8 +4,9 @@ body {
 }
 
 #app {
-  width: 53%;
+  width: 60%;
   margin: 0 auto 0 auto;
+  
 }
 #update {
   width: 85%;
@@ -19,12 +20,12 @@ body {
 
 .title {
   background-image: url(https://i.ibb.co/9pmYQ3C/spell3.gif);
-  background-color: #0053c0;
-  padding: 355px 1px 1px ;
-  font-family: 'Times New Roman', serif;
-  color: white;
-  font-size: 90px;
-  text-align: center;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000000;
+  padding: 400px 1px 1px ;
 }
 .sizes{
   font-size: 25px;
@@ -73,7 +74,7 @@ body {
   width: 40%;
   font-family: 'Times New Roman', Times, serif;
   color: #ffffff;
-  margin-left: 70%;
+  margin-left: 90%;
   font-size: 20px;
 
 }
@@ -85,49 +86,41 @@ body {
   justify-content: center; 
   display: flex;
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: auto;
   width:25%;
-  width:100px;
+  width:25px;
   height:30px;
   border-radius: 10%;
   background: rgb(216, 43, 0);
+  border: none;
   padding-top: 5px;
   color: white;
   text-align: center;
 
 }
-.add-btn :hover {
-  margin-top: 20px;
-  justify-content: center; 
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width:25%;
-  width:100px;
-  height:30px;
-  border-radius: 10%;
-  background-color: rgb(255, 0, 0);
-  padding-top: 5px;
-  color: white;
-  text-align: center;
-
+.add-btn:hover {
+  background-color: rgb(18, 236, 207);
 }
 
 .delete-btn {
   width:25%;
-  width:100px;
-  height:20px;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 25%;
+  width:30px;
+  height:30px;
+  font-family: 'Times New Roman', serif;
   background: rgb(122, 110, 106);
   color: white;
   text-align: center;
+  border: none;
+ 
+  text-decoration: none;
   display: inline-block;
+  font-size: 20px;
+  
 }
 
 .delete-btn:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 202, 170);
 } 
 .value_left{
   display: inline-flex;
@@ -173,4 +166,10 @@ body {
   margin: 0;
   opacity: 1;
   transition: 0s
+}
+.back{
+  color: rgb(231, 15, 15)
+  link="#FF0000" 
+  vlink="#FF0000" 
+  alink="#FF0000"
 }
